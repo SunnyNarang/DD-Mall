@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_margin="3dp"
+        android:layout_height="match_parent">
+
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view_inner"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        card_view:cardBackgroundColor="#d2d2d2"
+        card_view:cardCornerRadius="5dp"
+        card_view:cardElevation="10dp" >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+   <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/cat_img"
+        android:layout_width="match_parent"
+        fresco:fadeDuration="600"
+        android:padding="10dp"
+        android:transitionName="profile"
+        android:layout_gravity="center_horizontal"
+        fresco:roundingBorderWidth="1dp"
+        android:layout_height="70dp"
+        />
+
+
+
+
+
+    <exodiasolutions.ddcombine.DindayalCityMallApp.ExoHeadingTextView
+        android:layout_width="wrap_content"
+        android:id="@+id/cat_text"
+        android:textSize="14sp"
+        android:layout_gravity="center_horizontal"
+        android:paddingStart="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_height="wrap_content" />
+
+
+
+</LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>  </LinearLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home_white_24dp"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/ic_info_white_24dp"
+            android:title="About" />
+        <item
+            android:id="@+id/nav_features"
+            android:icon="@drawable/ic_graphic_eq_white_24dp"
+            android:title="Features" />
+        <item
+            android:id="@+id/nav_business"
+            android:icon="@drawable/ic_business_center_white_24dp"
+            android:title="Business" />
+
+        <item
+        android:id="@+id/nav_stores"
+        android:icon="@drawable/ic_store_white_24dp"
+        android:title="Stores" />
+        <item
+            android:id="@+id/nav_login"
+            android:icon="@drawable/ic_store_white_24dp"
+            android:title="Login" />
+
+
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_contact_us"
+                android:icon="@drawable/ic_person_pin_circle_white_24dp"
+                android:title="Contact Us" />
+        </menu>
+    </item>
+
+</menu>

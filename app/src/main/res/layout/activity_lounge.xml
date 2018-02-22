@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_lounge"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.dindayalcitymall.exodia.exodiasolutions.ddcombine.myapplication.Lounge">
+    <ScrollView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+        <LinearLayout
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:padding="5dp"
+            android:layout_marginTop="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_height="match_parent"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_margin="5dp"
+
+                    android:orientation="vertical"
+                    android:background="@drawable/card_back"
+                    >
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="200dp"
+                        android:scaleType="fitXY"
+                        android:layout_gravity="center"
+                        app:srcCompat="@drawable/amoeba" />
+
+
+                    <exodiasolutions.ddcombine.DindayalCityMallApp.ExoHeadingTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:layout_marginRight="10sp"
+                        android:layout_row="1"
+                        android:textSize="20sp"
+                        android:textColor="@color/colorHeading"
+                        android:layout_margin="6dp"
+                        android:text="Amoeba" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_height="match_parent"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_margin="5dp"
+
+                    android:orientation="vertical"
+                    android:background="@drawable/card_back"
+                    >
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="200dp"
+                        android:scaleType="fitXY"
+                        android:layout_gravity="center"
+                        app:srcCompat="@drawable/funcinema" />
+
+
+                    <exodiasolutions.ddcombine.DindayalCityMallApp.ExoHeadingTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:layout_marginRight="10sp"
+                        android:layout_row="1"
+                        android:textSize="20sp"
+                        android:textColor="@color/colorHeading"
+                        android:layout_margin="6dp"
+                        android:text="Fun Cinema" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_margin="5dp"
+                android:padding="5dp"
+                android:orientation="vertical"
+                android:background="@drawable/bck_food"
+                >
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="180dp"
+                    android:scaleType="fitXY"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/sevend" />
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="2dp"
+                    android:layout_margin="3dp"
+                    android:background="#c0c0c0"/>
+                <exodiasolutions.ddcombine.DindayalCityMallApp.ExoHeadingTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:layout_margin="8dp"
+                    android:textColor="@color/colorHeading"
+                    android:text="7 D"/>
+                <!-- <Button
+                     android:layout_width="wrap_content"
+                     android:layout_height="40dp"
+                     android:text="call Now"
+                     android:background=""
+                     android:layout_marginLeft="8dp"/>
+-->
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

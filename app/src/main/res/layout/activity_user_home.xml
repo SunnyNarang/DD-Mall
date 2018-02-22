@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   android:orientation="vertical"
+    tools:context="exodiasolutions.ddcombine.DindayalCityMallApp.UserHome">
+
+    <exodiasolutions.ddcombine.DindayalCityMallApp.ExoHeadingTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/name"
+        android:textSize="20sp"
+        />
+
+    <exodiasolutions.ddcombine.DindayalCityMallApp.ExoHeadingTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+
+        android:id="@+id/email"
+        android:textSize="14sp"
+        />
+
+<Button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Logout"
+    android:onClick="logout"
+    />
+
+
+</LinearLayout>

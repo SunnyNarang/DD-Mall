@@ -1,0 +1,444 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#b92e3c"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/app_bar_main">
+    <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="225dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/cover"
+            />
+    <ScrollView
+    android:layout_width="match_parent"
+    android:paddingTop="200dp"
+    android:clipToPadding="false"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:background="@drawable/bck_table"
+            android:rowCount="3"
+            >
+            <TableRow>
+                <LinearLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:padding="2dp"
+                    >
+                    <LinearLayout android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:baselineAligned="true"
+                        android:onClick="showShops"
+                        android:background="@drawable/bck"
+                        >
+                        <ImageButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="100dp"
+                            android:layout_gravity="center"
+                            android:background="#ec008c"
+                            android:onClick="showShops"
+                            android:layout_marginBottom="20dp"
+                            app:srcCompat="@drawable/shop" />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_column="1"
+                            android:layout_marginRight="10sp"
+                            android:layout_row="1"
+                            android:layout_margin="5dp"
+                            android:textColor="#fff"
+                            android:textSize="14sp"
+                            android:text="SHOPPING" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_column="1"
+                    android:layout_row="0"
+                    android:padding="2dp"
+                    >
+                    <LinearLayout android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:id="@+id/cinema"
+                        android:onClick="showCinema"
+                        android:background="@drawable/bck_cinema"
+                        >
+                        <ImageButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="100dp"
+                            android:layout_gravity="center"
+                            android:background="#ed1c24"
+                            android:onClick="showCinema"
+                            android:layout_marginBottom="18dp"
+                            app:srcCompat="@drawable/ic_cinema" />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_column="1"
+                            android:layout_marginRight="10sp"
+                            android:layout_row="1"
+                            android:layout_margin="5dp"
+                            android:textColor="#fff"
+                            android:textSize="16sp"
+                            android:text="cinema" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </TableRow>
+            <TableRow>
+
+                <LinearLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_column="0"
+                    android:layout_row="1"
+                    android:padding="2dp"
+                    >
+                    <LinearLayout android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:onClick="showDining"
+                        android:background="@drawable/bck_dining"
+                        >
+                        <ImageButton
+                            android:layout_width="80dp"
+                            android:layout_height="100dp"
+                            android:layout_gravity="center"
+                            android:background="#fa5511"
+                            android:onClick="showDining"
+                            android:scaleType="fitCenter"
+                            android:layout_marginBottom="18dp"
+                            app:srcCompat="@drawable/ic_dining" />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_column="1"
+                            android:layout_marginRight="10sp"
+                            android:layout_row="1"
+                            android:layout_margin="5dp"
+                            android:textColor="#fff"
+                            android:textSize="16sp"
+                            android:text="Dining" />
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:padding="2dp"
+                    >
+                    <LinearLayout android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:background="@drawable/bck_lounge"
+                        >
+                        <ImageButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="100dp"
+                            android:layout_gravity="center"
+                            android:background="#92278f"
+                            android:layout_marginBottom="18dp"
+                            app:srcCompat="@drawable/ic_lounge" />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_column="1"
+                            android:layout_marginRight="10sp"
+                            android:layout_row="1"
+                            android:layout_margin="5dp"
+                            android:textColor="#fff"
+                            android:textSize="16sp"
+                            android:text="Lounge and Cafe" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </TableRow>
+            <TableRow>
+
+                <LinearLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:padding="2dp"
+                    >
+                    <LinearLayout android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:onClick="showEntertain"
+                        android:background="@drawable/bck_play"
+                        >
+                        <ImageButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="100dp"
+                            android:layout_gravity="center"
+                            android:background="#39b54a"
+                            android:onClick="showEntertain"
+                            android:layout_marginBottom="18dp"
+                            app:srcCompat="@drawable/ic_play" />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_column="1"
+                            android:layout_marginRight="10sp"
+                            android:layout_row="1"
+                            android:layout_margin="5dp"
+                            android:textColor="#fff"
+                            android:textSize="16sp"
+                            android:text="Play" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:padding="2dp"
+                    >
+                    <LinearLayout android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:background="@drawable/bck_floor"
+                        >
+                        <ImageButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="100dp"
+                            android:layout_gravity="center"
+                            android:background="#0ecab6"
+                            android:layout_marginBottom="18dp"
+                            app:srcCompat="@drawable/ic_map" />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_column="1"
+                            android:layout_marginRight="10sp"
+                            android:layout_row="1"
+                            android:layout_margin="5dp"
+                            android:textColor="#fff"
+                            android:textSize="16sp"
+                            android:text="Floor Map" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </TableRow>
+            <TableRow>
+
+                <LinearLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:padding="2dp"
+                    >
+                    <LinearLayout android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+
+                        android:onClick="showEntertain"
+                        android:background="@drawable/bck_skate"
+                        >
+                        <ImageButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="100dp"
+                            android:layout_gravity="center"
+                            android:background="#00aeef"
+                            android:layout_marginBottom="18dp"
+                            android:onClick="showEntertain"
+                            app:srcCompat="@drawable/ic_skate" />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_column="1"
+                            android:layout_marginRight="10sp"
+                            android:layout_row="1"
+                            android:layout_margin="5dp"
+                            android:textColor="#fff"
+                            android:textSize="16sp"
+                            android:text="Skating" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:padding="2dp"
+                    >
+                    <LinearLayout android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:onClick="showEntertain"
+                        android:background="@drawable/bck_bowling"
+                        >
+                        <ImageButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="100dp"
+                            android:layout_gravity="center"
+                            android:background="#ffd802"
+                            android:layout_marginBottom="18dp"
+                            android:onClick="showEntertain"
+                            app:srcCompat="@drawable/ic_bowling" />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_column="1"
+                            android:layout_marginRight="10sp"
+                            android:layout_row="1"
+                            android:layout_margin="5dp"
+                            android:textColor="#fff"
+                            android:textSize="16sp"
+                            android:text="Bowling" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </TableRow>
+        </TableLayout>
+        <exodiasolutions.ddcombine.DindayalCityMallApp.ExoSimpleTextView
+            android:id="@+id/tv_stores"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#2e2627"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:paddingLeft="10dp"
+            android:text="TRENDING STORES"
+            android:background="@color/colorWhite"/>
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/textView5"
+            android:scrollbars="none"
+            android:paddingBottom="100dp"
+            android:background="@color/colorWhite"
+            android:id="@+id/horizontalScrollView2">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="6sp"
+                android:layout_marginRight="16sp"
+                android:orientation="horizontal" >
+
+
+                <ImageView
+                    android:id="@+id/imageView6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10sp"
+                    android:layout_marginRight="18sp"
+                    android:adjustViewBounds="true"
+                    app:srcCompat="@drawable/ucb" />
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_gravity="center"
+                    android:adjustViewBounds="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="18sp"
+                    app:srcCompat="@drawable/mufti" />
+
+                <ImageView
+                    android:id="@+id/imageView8"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginRight="18sp"
+                    app:srcCompat="@drawable/louie_phill" />
+
+                <ImageView
+                    android:id="@+id/imageView10"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginRight="18sp"
+                    app:srcCompat="@drawable/ucb" />
+
+                <ImageView
+                    android:id="@+id/imageView9"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:layout_weight="1"
+                    android:layout_marginRight="10sp"
+                    app:srcCompat="@drawable/wrangler" />
+            </LinearLayout>
+
+        </HorizontalScrollView>
+    </LinearLayout>
+</ScrollView>
+</FrameLayout>
+
+
+
+

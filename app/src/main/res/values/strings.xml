@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Dindayal City Mall</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_settings">Settings</string>
+    <string name="about">The Dindayal City Mall with its ultra modern architecture and stylish setting of extensively landscaped greens will be identified as Gwalior\'s new 21st century landmark.Designed to be an earthquake resistant structure with bigger span pillars the city mall will create a feeling of solidity while retaining elegance. Provisions for rainwater harvesting, a waterfall and fountains will also add to the city Mall\'s distinctive eco-friendly appeal.DINDAYAL CITY MALL has been promoted by Dindayal Group of Gwalior and developed by ARG Group of Jaipur. The Mall is exquisitely designed, has a frontage of 460 feet on Maharani Laxmi Bai Road, which is 120 feet wide and one of the important arterial roads of Gwalior. The Mall is very centrally located and has roads on two sides (lengthwise) giving it immense visibility and prominence.Starting with a 500ft. wide landscaped frontage and a huge 8000 sq.feet atrium,this state of the art Mall will magnify the shopping experience on a truly grand scale. comprising lower basement, basement, ground, first and second floor the total built up area will be 2,25,000 sq.ft that will include more than 150 outlets consisting of kiosks,showrooms,bazaars, restaurants and anchor stores ranging in size from 80sq.ft. Covering just about every activity including retail,services, Entertainment and F and B. It will take shopping to another level of ease and convenience by assigning floors to a particular theme and category of products. yes , the City Mall will redefine shopping , leisure and entertainment for residents of Gwalior and neighborhood areas as well as for tourists visiting the city. </string>
+    <string name="title_activity_contact_maps">Map</string>
+
+</resources>
